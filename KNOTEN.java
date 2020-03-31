@@ -28,6 +28,7 @@ public class KNOTEN extends BAUMELEMENT
     
     // einfuegen
     
+    //public DATENELEMENT suchen(DATENELEMENT suchelement)
     
     
 }
