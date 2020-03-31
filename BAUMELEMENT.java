@@ -8,7 +8,6 @@
 public abstract class BAUMELEMENT
 {
 
-        
     // Konstruktor
     public BAUMELEMENT()
     {
@@ -25,4 +24,9 @@ public abstract class BAUMELEMENT
 
     public abstract void AusgebenPostOrder();
 
+    public abstract BAUMELEMENT Entfernen(DATENELEMENT element);
+    
+    public abstract BAUMELEMENT Anfügen(BAUMELEMENT teilbaum);
+    
+    public abstract DATENELEMENT DatenGeben();
 }
