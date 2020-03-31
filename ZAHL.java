@@ -21,6 +21,11 @@ public class ZAHL implements DATENELEMENT
         return zahl < zahl2.ZahlGeben();
     }
     
+    public boolean IstGleich(DATENELEMENT daten){
+        ZAHL zahl2= (ZAHL) daten;
+        return zahl==zahl2.ZahlGeben();
+    }
+    
     public int ZahlGeben() {
         return zahl;
     }
