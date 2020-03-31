@@ -14,7 +14,7 @@ class BAUM
     //public void Einfügen (DATENELEMENT neueDaten)
     
     public void AusgebenPreOrder(){
-        wurzel.AusgebenPreOrder();
+        wurzel.AusgebenPreOrder("");
     }
     
     public void AusgebenInOrder(){

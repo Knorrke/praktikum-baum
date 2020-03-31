@@ -28,7 +28,7 @@ public class ABSCHLUSS extends BAUMELEMENT
         return neuerKnoten;
     }
 
-    public void AusgebenPreOrder() {
+    public void AusgebenPreOrder(String prefix) {
 
     }
 

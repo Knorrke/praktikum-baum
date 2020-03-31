@@ -50,10 +50,11 @@ public class KNOTEN extends BAUMELEMENT
         return this;
     }
 
-    public void AusgebenPreOrder() {
+    public void AusgebenPreOrder(String prefix) {
+        System.out.print(prefix + "- ");
         daten.Ausgeben();
-        linkerNachfolger.AusgebenPreOrder();
-        rechterNachfolger.AusgebenPreOrder();
+        linkerNachfolger.AusgebenPreOrder(prefix + " |");
+        rechterNachfolger.AusgebenPreOrder(prefix + " |");
     }
 
     public void AusgebenInOrder() {

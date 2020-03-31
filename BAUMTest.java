@@ -38,6 +38,7 @@ public class BAUMTest
     public void testEinfügen(){
         ZAHL testZahl=new ZAHL(36);
         testBaumZahl.Einfügen(testZahl);
+        testBaumZahl.AusgebenInOrder();
         System.out.println(testBaumZahl.suchen(testZahl));
     }
 

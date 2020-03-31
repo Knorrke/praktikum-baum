@@ -18,7 +18,7 @@ public abstract class BAUMELEMENT
 
     public abstract BAUMELEMENT Einfügen(DATENELEMENT neueDaten);
 
-    public abstract void AusgebenPreOrder();
+    public abstract void AusgebenPreOrder(String prefix);
 
     public abstract void AusgebenInOrder();
 
