@@ -33,4 +33,16 @@ public class KNOTEN extends BAUMELEMENT
         //TODO
         return null;
     }
+
+    public void AusgebenPreOrder() {
+
+    }
+
+    public void AusgebenInOrder() {
+
+    }
+
+    public void AusgebenPostOrder() {
+
+    }
 }

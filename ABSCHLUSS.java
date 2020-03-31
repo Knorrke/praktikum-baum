@@ -16,13 +16,25 @@ public class ABSCHLUSS extends BAUMELEMENT
     {
         super();
     }
-    
+
     public DATENELEMENT Suchen(DATENELEMENT suchobjekt){
         return null;
     }
-    
+
     public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten){
         return null;
+    }
+
+    public void AusgebenPreOrder() {
+
+    }
+
+    public void AusgebenInOrder() {
+
+    }
+
+    public void AusgebenPostOrder() {
+
     }
 
 }

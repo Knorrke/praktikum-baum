@@ -7,17 +7,22 @@
  */
 public abstract class BAUMELEMENT
 {
-   
-  
+
         
     // Konstruktor
     public BAUMELEMENT()
     {
-      
+
     }
-    
+
     public abstract DATENELEMENT Suchen(DATENELEMENT suchobjekt);
+
     public abstract BAUMELEMENT Einfuegen(DATENELEMENT neueDaten);
-    
-    
+
+    public abstract void AusgebenPreOrder();
+
+    public abstract void AusgebenInOrder();
+
+    public abstract void AusgebenPostOrder();
+
 }
