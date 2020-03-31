@@ -20,7 +20,7 @@ public class KNOTEN extends BAUMELEMENT
 
     }
 
-    public KNOTEN(DATENELEMENT neueDaten, KNOTEN neuerLinkerNachfolger,KNOTEN neuerRechterNachfolger){
+    public KNOTEN(DATENELEMENT neueDaten, BAUMELEMENT neuerLinkerNachfolger,BAUMELEMENT neuerRechterNachfolger){
         daten = neueDaten;
         linkerNachfolger = neuerLinkerNachfolger;
         rechterNachfolger = neuerRechterNachfolger;
@@ -34,5 +34,17 @@ public class KNOTEN extends BAUMELEMENT
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten) {
         //TODO
         return null;
+    }
+
+    public void AusgebenPreOrder() {
+
+    }
+
+    public void AusgebenInOrder() {
+
+    }
+
+    public void AusgebenPostOrder() {
+
     }
 }

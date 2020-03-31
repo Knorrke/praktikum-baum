@@ -17,14 +17,25 @@ public class ABSCHLUSS extends BAUMELEMENT
         super();
     }
 
-    //public DATENELEMENT Suchen(DATENELEMENT suchobjekt)
     public DATENELEMENT Suchen(DATENELEMENT suchobjekt){
         return null;
     }
 
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten){
-        BAUMELEMENT neuerKnoten = new KNOTEN (
-        return neueDaten;
+        BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
+        return neuerKnoten;
+    }
+
+    public void AusgebenPreOrder() {
+
+    }
+
+    public void AusgebenInOrder() {
+
+    }
+
+    public void AusgebenPostOrder() {
+
     }
 
 }
