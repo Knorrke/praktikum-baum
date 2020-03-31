@@ -25,8 +25,15 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public DATENELEMENT Suchen(DATENELEMENT daten) {
-        //TODO
-        return null;
+        if(this.daten.IstGleich(daten)){
+            return this.daten;
+        }
+        else if(this.daten.IstKleinerAls(daten)){
+            return this.linkerNachfolger.Suchen(daten);
+        }
+        else {
+            return this.rechterNachfolger.Suchen(daten);
+        }
     }
 
     public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten) {
