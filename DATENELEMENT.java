@@ -3,5 +3,5 @@
  */
 public interface DATENELEMENT
 {
-    public int Vergleichen(DATENELEMENT daten);
+    public boolean IstKleinerAls(DATENELEMENT daten);
 }

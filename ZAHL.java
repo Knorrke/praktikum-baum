@@ -7,16 +7,21 @@
  */
 public class ZAHL implements DATENELEMENT
 {
+    int zahl;
     /**
      * Konstruktor für Objekte der Klasse ZAHL
      */
-    ZAHL()
+    ZAHL(int zahlNeu)
     {
-
+        zahl = zahlNeu;
     }
     
-    public int Vergleichen(DATENELEMENT daten){
-        //TODO
-        return 0;
+    public boolean IstKleinerAls(DATENELEMENT daten){
+        ZAHL zahl2 = (ZAHL) daten;
+        return zahl < zahl2.ZahlGeben();
+    }
+    
+    public int ZahlGeben() {
+        return zahl;
     }
 }
