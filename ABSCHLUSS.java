@@ -25,13 +25,6 @@ public class ABSCHLUSS extends BAUMELEMENT
 
         BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten);
 
-
-        BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
-
-
-        BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
-
-
         return neuerKnoten;
     }
 
