@@ -17,7 +17,9 @@ public class KNOTEN extends BAUMELEMENT
      */
     public KNOTEN(DATENELEMENT neueDaten)
     {
-
+        daten = neueDaten;
+        rechterNachfolger = new ABSCHLUSS();
+        linkerNachfolger = new ABSCHLUSS();
     }
 
     public KNOTEN(DATENELEMENT neueDaten, BAUMELEMENT neuerLinkerNachfolger,BAUMELEMENT neuerRechterNachfolger){
@@ -27,13 +29,25 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public DATENELEMENT Suchen(DATENELEMENT daten) {
-        //TODO
-        return null;
+        if(this.daten.IstGleich(daten)){
+            return this.daten;
+        }
+        else if(this.daten.IstKleinerAls(daten)){
+            return this.linkerNachfolger.Suchen(daten);
+        }
+        else {
+            return this.rechterNachfolger.Suchen(daten);
+        }
     }
 
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten) {
-        //TODO
-        return null;
+        if(neueDaten.IstKleinerAls(daten)){
+            linkerNachfolger = linkerNachfolger.Einfügen(neueDaten);
+        }
+        else{
+            rechterNachfolger = rechterNachfolger.Einfügen(neueDaten);
+        }
+        return this;
     }
 
     public void AusgebenPreOrder() {
