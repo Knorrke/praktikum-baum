@@ -51,17 +51,23 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public void AusgebenPreOrder() {
-
+        daten.Ausgeben();
+        linkerNachfolger.AusgebenPreOrder();
+        rechterNachfolger.AusgebenPreOrder();
     }
 
     public void AusgebenInOrder() {
-
+        linkerNachfolger.AusgebenPreOrder();
+        daten.Ausgeben();
+        rechterNachfolger.AusgebenPreOrder();
     }
 
     public void AusgebenPostOrder() {
-
+        linkerNachfolger.AusgebenPreOrder();
+        rechterNachfolger.AusgebenPreOrder();
+        daten.Ausgeben();
     }
-    
+
     public BAUMELEMENT Entfernen(DATENELEMENT zuLöschen) {
         if (daten.IstGleich(zuLöschen)) {
             linkerNachfolger.Anfügen(rechterNachfolger);
@@ -75,13 +81,13 @@ public class KNOTEN extends BAUMELEMENT
             return this;
         }
     }
-    
+
     public BAUMELEMENT Anfügen(BAUMELEMENT element) {
         DATENELEMENT vergleichsDaten = element.DatenGeben();
         if(vergleichsDaten == null) {
             return this;
         }
-        
+
         if(daten.IstKleinerAls(vergleichsDaten)) {
             rechterNachfolger = rechterNachfolger.Anfügen(element);
         } else {
@@ -89,7 +95,7 @@ public class KNOTEN extends BAUMELEMENT
         }
         return this;
     }
-    
+
     public DATENELEMENT DatenGeben() {
         return daten;
     }
