@@ -57,14 +57,14 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public void AusgebenInOrder() {
-        linkerNachfolger.AusgebenPreOrder();
+        linkerNachfolger.AusgebenInOrder();
         daten.Ausgeben();
-        rechterNachfolger.AusgebenPreOrder();
+        rechterNachfolger.AusgebenInOrder();
     }
 
     public void AusgebenPostOrder() {
-        linkerNachfolger.AusgebenPreOrder();
-        rechterNachfolger.AusgebenPreOrder();
+        linkerNachfolger.AusgebenPostOrder();
+        rechterNachfolger.AusgebenPostOrder();
         daten.Ausgeben();
     }
 

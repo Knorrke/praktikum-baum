@@ -22,7 +22,7 @@ class BAUM
     }
     
     public void AusgebenPostOrder(){
-        wurzel.AusgebenInOrder();
+        wurzel.AusgebenPostOrder();
     }
 
 
