@@ -17,7 +17,7 @@ public abstract class BAUMELEMENT
 
     public abstract DATENELEMENT Suchen(DATENELEMENT suchobjekt);
 
-    public abstract BAUMELEMENT Einfuegen(DATENELEMENT neueDaten);
+    public abstract BAUMELEMENT Einfügen(DATENELEMENT neueDaten);
 
     public abstract void AusgebenPreOrder();
 
