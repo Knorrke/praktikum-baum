@@ -16,5 +16,7 @@ public class ABSCHLUSS extends BAUMELEMENT
     {
         super();
     }
+    
+    //public DATENELEMENT Suchen(DATENELEMENT suchobjekt)
 
 }
