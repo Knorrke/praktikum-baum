@@ -35,4 +35,8 @@ public class WORT implements DATENELEMENT
     public String WortGeben(){
         return wort;
     }
+    
+    public void Ausgeben() {
+        System.out.println(wort);
+    }
 }
