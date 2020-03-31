@@ -22,14 +22,15 @@ public class ABSCHLUSS extends BAUMELEMENT
     }
 
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten){
-
+<<<<<<< HEAD
 
         BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten);
 
         BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
 
+=======
         BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
-
+>>>>>>> 4298432489481054cb3bab444bed1d92492da88e
         return neuerKnoten;
     }
 

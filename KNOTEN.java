@@ -51,7 +51,9 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public void AusgebenPreOrder() {
-
+        daten.Ausgeben();
+        linkerNachfolger.AusgebenPreOrder();
+        rechterNachfolger.AusgebenPreOrder();
     }
 
     public void AusgebenInOrder() {
