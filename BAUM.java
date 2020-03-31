@@ -17,6 +17,7 @@ class BAUM
         wurzel.AusgebenPreOrder();
     }
 
+
     public DATENELEMENT suchen(DATENELEMENT suchelement){
         return wurzel.Suchen(suchelement);
     }
