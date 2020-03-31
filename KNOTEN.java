@@ -33,10 +33,10 @@ public class KNOTEN extends BAUMELEMENT
             return this.daten;
         }
         else if(this.daten.IstKleinerAls(daten)){
-            return this.linkerNachfolger.Suchen(daten);
+            return this.rechterNachfolger.Suchen(daten);
         }
         else {
-            return this.rechterNachfolger.Suchen(daten);
+            return this.linkerNachfolger.Suchen(daten);
         }
     }
 

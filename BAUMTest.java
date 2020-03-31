@@ -11,11 +11,14 @@ import org.junit.Test;
  */
 public class BAUMTest
 {
+    BAUM testBaumZahl= new BAUM();
+    int[] testZahlen={18,7, 4, 1, 5, 12, 10,16, 28,23, 21, 24,33,31};
     /**
      * Konstruktor fuer die Test-Klasse BAUMTest
      */
     public BAUMTest()
     {
+
     }
 
     /**
@@ -26,6 +29,23 @@ public class BAUMTest
     @Before
     public void setUp()
     {
+        for(int i=0; i< testZahlen.length; i++){
+            testBaumZahl.Einfügen(new ZAHL(testZahlen[i]));
+        }
+    }
+    
+    @Test
+    public void testEinfügen(){
+        ZAHL testZahl=new ZAHL(36);
+        testBaumZahl.Einfügen(testZahl);
+        System.out.println(testBaumZahl.suchen(testZahl));
+    }
+
+    @Test
+    public void testSuchen(){
+        ZAHL testZahl= new ZAHL(12);
+        assertTrue(testBaumZahl.suchen(testZahl).IstGleich(testZahl));
+        assertNull(testBaumZahl.suchen(new ZAHL(11)));
     }
 
     /**
