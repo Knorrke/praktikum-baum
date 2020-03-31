@@ -22,7 +22,11 @@ public class ABSCHLUSS extends BAUMELEMENT
     }
 
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten){
+
         BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten);
+
+        BAUMELEMENT neuerKnoten = new KNOTEN (neueDaten, new ABSCHLUSS(), new ABSCHLUSS());
+
         return neuerKnoten;
     }
 
