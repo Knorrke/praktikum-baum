@@ -17,7 +17,9 @@ public class KNOTEN extends BAUMELEMENT
      */
     public KNOTEN(DATENELEMENT neueDaten)
     {
-
+        daten = neueDaten;
+        rechterNachfolger = new ABSCHLUSS();
+        linkerNachfolger = new ABSCHLUSS();
     }
 
     public KNOTEN(DATENELEMENT neueDaten, BAUMELEMENT neuerLinkerNachfolger,BAUMELEMENT neuerRechterNachfolger){
