@@ -47,4 +47,36 @@ public class KNOTEN extends BAUMELEMENT
     public void AusgebenPostOrder() {
 
     }
+    
+    public BAUMELEMENT Entfernen(DATENELEMENT zuLöschen) {
+        if (daten.IstGleich(zuLöschen)) {
+            linkerNachfolger.Anfügen(rechterNachfolger);
+            return linkerNachfolger;
+        } else {
+            if (daten.IstKleinerAls(zuLöschen)) {
+                rechterNachfolger = rechterNachfolger.Entfernen(zuLöschen);
+            } else {
+                linkerNachfolger = linkerNachfolger.Entfernen(zuLöschen);
+            }
+            return this;
+        }
+    }
+    
+    public BAUMELEMENT Anfügen(BAUMELEMENT element) {
+        DATENELEMENT vergleichsDaten = element.DatenGeben();
+        if(vergleichsDaten == null) {
+            return this;
+        }
+        
+        if(daten.IstKleinerAls(vergleichsDaten)) {
+            rechterNachfolger = rechterNachfolger.Anfügen(element);
+        } else {
+            linkerNachfolger = linkerNachfolger.Anfügen(element);
+        }
+        return this;
+    }
+    
+    public DATENELEMENT DatenGeben() {
+        return daten;
+    }
 }

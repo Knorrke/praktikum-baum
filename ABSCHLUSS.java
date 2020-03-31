@@ -38,4 +38,15 @@ public class ABSCHLUSS extends BAUMELEMENT
 
     }
 
+    public BAUMELEMENT Entfernen(DATENELEMENT zuLöschen) {
+        return this;
+    }
+    
+    public BAUMELEMENT Anfügen(BAUMELEMENT element) {
+        return element;
+    }
+    
+    public DATENELEMENT DatenGeben() {
+        return null;
+    }
 }
