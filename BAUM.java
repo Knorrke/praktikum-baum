@@ -23,6 +23,6 @@ class BAUM
     }
 
     public void Einfügen (DATENELEMENT neueDaten){
-        wurzel.Einfügen(neueDaten);
+        wurzel = wurzel.Einfügen(neueDaten);
     }
 }
