@@ -17,18 +17,18 @@ public class KNOTEN extends BAUMELEMENT
      */
     public KNOTEN(DATENELEMENT neueDaten)
     {
-       
+
     }
-    
+
     public KNOTEN(DATENELEMENT neueDaten, KNOTEN neuerLinkerNachfolger,KNOTEN neuerRechterNachfolger){
-    
+
     }
-    
+
     public DATENELEMENT Suchen(DATENELEMENT daten) {
         //TODO
         return null;
     }
-    
+
     public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten) {
         //TODO
         return null;
