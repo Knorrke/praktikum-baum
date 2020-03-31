@@ -10,4 +10,8 @@ class BAUM
     //public DATENELEMENT suchen(DATENELEMENT suchelement)
     
     //public void Einfügen (DATENELEMENT neueDaten)
+    
+    public void AusgebenPreOrder(){
+        wurzel.AusgebenPreOrder();
+    }
 }
