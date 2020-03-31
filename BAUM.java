@@ -16,6 +16,14 @@ class BAUM
     public void AusgebenPreOrder(){
         wurzel.AusgebenPreOrder();
     }
+    
+    public void AusgebenInOrder(){
+        wurzel.AusgebenInOrder();
+    }
+    
+    public void AusgebenPostOrder(){
+        wurzel.AusgebenInOrder();
+    }
 
 
     public DATENELEMENT suchen(DATENELEMENT suchelement){
