@@ -21,7 +21,9 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public KNOTEN(DATENELEMENT neueDaten, KNOTEN neuerLinkerNachfolger,KNOTEN neuerRechterNachfolger){
-
+        daten = neueDaten;
+        linkerNachfolger = neuerLinkerNachfolger;
+        rechterNachfolger = neuerRechterNachfolger;
     }
 
     public DATENELEMENT Suchen(DATENELEMENT daten) {
@@ -29,7 +31,7 @@ public class KNOTEN extends BAUMELEMENT
         return null;
     }
 
-    public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten) {
+    public BAUMELEMENT Einfügen(DATENELEMENT neueDaten) {
         //TODO
         return null;
     }

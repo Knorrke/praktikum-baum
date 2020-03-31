@@ -22,8 +22,9 @@ public class ABSCHLUSS extends BAUMELEMENT
         return null;
     }
 
-    public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten){
-        return null;
+    public BAUMELEMENT Einfügen(DATENELEMENT neueDaten){
+        BAUMELEMENT neuerKnoten = new KNOTEN (
+        return neueDaten;
     }
 
 }
