@@ -27,12 +27,16 @@ public class WORT implements DATENELEMENT
             return false;
         }
     }
-    
+
     public boolean IstGleich(DATENELEMENT daten){
         return wort.equals((WORT)daten);
     }
 
     public String WortGeben(){
         return wort;
+    }
+    
+    public void Ausgeben() {
+        System.out.println(wort);
     }
 }

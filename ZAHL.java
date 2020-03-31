@@ -29,4 +29,8 @@ public class ZAHL implements DATENELEMENT
     public int ZahlGeben() {
         return zahl;
     }
+    
+    public void Ausgeben() {
+        System.out.println(zahl);
+    }
 }
