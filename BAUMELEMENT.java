@@ -16,7 +16,7 @@ public abstract class BAUMELEMENT
       
     }
     
-    public abstract DATENELEMENT Suchen(DATENELEMENT daten);
+    public abstract DATENELEMENT Suchen(DATENELEMENT suchobjekt);
     public abstract BAUMELEMENT Einfuegen(DATENELEMENT neueDaten);
     
     

@@ -18,7 +18,12 @@ public class ABSCHLUSS extends BAUMELEMENT
     }
 
     //public DATENELEMENT Suchen(DATENELEMENT suchobjekt)
-    
-    //public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten)
+    public DATENELEMENT Suchen(DATENELEMENT suchobjekt){
+        return null;
+    }
+
+    public BAUMELEMENT Einfuegen(DATENELEMENT neueDaten){
+        return null;
+    }
 
 }
