@@ -47,6 +47,27 @@ public class BAUMTest
         assertTrue(testBaumZahl.suchen(testZahl).IstGleich(testZahl));
         assertNull(testBaumZahl.suchen(new ZAHL(11)));
     }
+    
+    @Test
+    public void testPreOrder(){
+        System.out.println("Pre Order Ausgabe:");
+        testBaumZahl.AusgebenPreOrder();
+        System.out.println("_____________________");
+    }
+    
+    @Test
+    public void testInOrder(){
+        System.out.println("In Order Ausgabe:");
+        testBaumZahl.AusgebenInOrder();
+        System.out.println("_____________________");
+    }
+    
+    @Test
+    public void testPostOrder(){
+        System.out.println("Post Order Ausgabe:");
+        testBaumZahl.AusgebenPostOrder();
+        System.out.println("_____________________");
+    }
 
     /**
      * Gibt das Testgerüst wieder frei.
