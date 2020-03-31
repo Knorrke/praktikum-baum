@@ -5,7 +5,7 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class ABSCHLUSS extends KNOTEN
+public class ABSCHLUSS extends BAUMELEMENT
 {
     // Attribute - ABSCHLUSS hat keine eigenen Attribute
 
