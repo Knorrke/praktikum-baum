@@ -32,8 +32,13 @@ public class KNOTEN extends BAUMELEMENT
     }
 
     public BAUMELEMENT Einfügen(DATENELEMENT neueDaten) {
-        //TODO
-        return null;
+        if(neueDaten.IstKleinerAls(daten)){
+            linkerNachfolger = linkerNachfolger.Einfügen(neueDaten);
+        }
+        else{
+            rechterNachfolger = rechterNachfolger.Einfügen(neueDaten);
+        }
+        return this;
     }
 
     public void AusgebenPreOrder() {
