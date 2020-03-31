@@ -20,7 +20,7 @@ public class KNOTEN extends BAUMELEMENT
        
     }
     
-    public KNOTEN(DATENELEMENT neue Daten, KNOTEN neuerLinkerNachfolger, neuerRechterNachfolger){
+    public KNOTEN(DATENELEMENT neueDaten, KNOTEN neuerLinkerNachfolger, neuerRechterNachfolger){
     
     }
     
